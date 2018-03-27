@@ -1,11 +1,12 @@
 .video-problem{
+position: absolute;
+	top: 0;
+	left: 0;	
 	width: 100%;
 	height: auto;
 	border: 1px dashed #f6e580;
 	box-sizing: border-box;
 }
 .bgCanvas{
-	position: absolute;
-	top: 0;
-	left: 0;
+
 }
