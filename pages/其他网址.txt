@@ -1,0 +1,16 @@
+时间戳
+
+
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<script>document.write("<script type='text/javascript' src='//site.com  
+    /js.js?v=" + Date.now() + "'><\/script>");</script>
+
+
+
+CSS自动换行、强制不换行、强制断行、超出显示省略号
+
+
+https://blog.csdn.net/liuyan19891230/article/details/50969393
