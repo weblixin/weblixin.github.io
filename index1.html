@@ -90,12 +90,10 @@
             margin-top: 0.25rem;
         }
 
-        /* #foo {
-            opacity: 0;
-            position: absolute;
-            left: 0;
-            top: 0;
-        } */
+        #foo {
+            width: 1;
+			height: 0;
+        }
     </style>
 </head>
 
@@ -131,7 +129,6 @@
         var btn = document.getElementsByClassName('copy-btn')[0]
         var copy = function () {
             var b = document.getElementById('foo')
-            //b.value = text;
             b.select();
             b.setSelectionRange(0, b.value.length);
             if (document.execCommand('copy', false, null)) {
