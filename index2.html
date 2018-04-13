@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>0元领！包邮到家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+            font-size: 0.12rem;
+            color: #fff;
+        }
+
+        html {
+            font-size: 100px;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        input,
+        textarea {
+            outline: none;
+            border: 0;
+            color: #000;
+        }
+
+        .header {
+            width: 100%;
+            height: 2rem;
+            background: #000000;
+        }
+
+        .main {
+            width: 100%;
+            background: #ddd;
+        }
+
+        .main h2 {
+            text-align: center;
+            line-height: 1rem;
+            font-weight: normal;
+            font-size: 0.25rem;
+            border-bottom: 1px solid #000;
+        }
+
+        .main ul li {
+            padding: 0 0.4rem 0.25rem;
+            background: blue;
+            overflow: hidden;
+            line-height: 0.25rem;
+        }
+
+        .step {
+            float: left;
+            display: block;
+            width: 0.5rem;
+        }
+
+        .step-content {
+            margin-left: 0.75rem;
+        }
+
+        .copy-btn {
+            width: 0.75rem;
+            height: 0.25rem;
+            border: 0.01rem solid #000;
+            border-radius: 0.08rem;
+            margin-left: 0.25rem;
+            cursor: pointer;
+        }
+
+        .step-content img {
+            width: 1.5rem;
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        /* #foo {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header"></div>
+    <!-- 头部 -->
+    <!-- 领取步骤 -->
+    <div class="main">
+        <h2>领取步骤</h2>
+        <ul>
+            <li>
+                <span class="step">第一步</span>
+                <div class="step-content">
+                    <span class="txt">复制淘口令</span>
+                    <input data-clipboard-target="#foo" class="copy-btn" type="button" value="点击复制" />
+                    <textarea id="foo">如果你想要展示一些用户反馈，或者在用户复制/剪切后获取已经选择的文字，这里有个示例供你参考。我们通过触发自定义事件，例如 success 和 error，让你可以设置监听并实现自定义逻辑。</textarea>
+                </div>
+            </li>
+            <li>
+                <span class="step">第二步</span>
+                <div class="step-content">
+                    <p class="txt">长按识别图中二维码加微信好友</p>
+                    <img src="./images/21.jpeg" alt="">
+                </div>
+            </li>
+            <li>
+                <span class="step">第三步</span>
+                <div class="step-content">
+                    <p class="txt">打开淘宝APP，购买电动牙刷</p>
+                    <img src="./images/21.jpeg" alt="">
+                </div>
+            </li>
+            <li>
+                <span class="step">第四步</span>
+                <div class="step-content">
+                    <p class="txt">将您的订单号发送给第二步加的微信好友，他会发你和订单等额的红包</p>
+                    <img src="./images/21.jpeg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 领取步骤 -->
+</body>
+
+<!-- <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script> -->
+<!-- <script src="js/clipboard.min.js"></script> -->
+<script>
+    window.onload = function () {
+        var btn = document.getElementsByClassName('copy-btn')[0]
+        var copy = function () {
+            var b = document.getElementById('foo')
+            //b.value = text;
+            b.select();
+            b.setSelectionRange(0, b.value.length);
+            if (document.execCommand('copy', false, null)) {
+            }
+        };
+        btn.onclick=function(){
+            copy()
+        }
+        function refresh() {
+            var width = document.documentElement.clientWidth;
+            if (width < 375) {
+                document.documentElement.style.fontSize = width / 3.75 + "px";
+            } else {
+                document.documentElement.style.fontSize = "100px";
+            }
+        }
+        refresh();
+        window.onresize = refresh;
+    }
+
+
+
+</script>
+
+</html>
