@@ -112,7 +112,7 @@
                 <div class="step-content">
                     <span class="txt">复制淘口令</span>
 					<input data-clipboard-target="#foo" class="copy-btn" type="button" value="点击复制" />
-                    <textarea id="foo">如果你想要展示一些用户反馈，或者在用户复制/剪切后获取已经选择的文字，这里有个示例供你参考。我们通过触发自定义事件，例如 success 和 error，让你可以设置监听并实现自定义逻辑。</textarea>
+                    <textarea id="foo"></textarea>
                 </div>
             </li>
             <li>
@@ -144,16 +144,18 @@
 <script>
     window.onload = function () {
         var btn = document.getElementsByClassName('copy-btn')[0]
+        var text = "如果你想要展示一些用户反馈，或者在用户复制/剪切后获取已经选择的文字，这里有个示例供你参考。我们通过触发自定义事件，例如 success 和 error，让你可以设置监听并实现自定义逻辑。"
         var copy = function () {
             var b = document.getElementById('foo')
+            b.value = text;
             b.select();
             b.setSelectionRange(0, b.value.length);
             if (document.execCommand('copy', false, null)) {
+                b.remove()
             }
         };
         btn.onclick=function(){
             copy()
-			return false;
         }
         function refresh() {
             var width = document.documentElement.clientWidth;
