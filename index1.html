@@ -18,7 +18,7 @@
         html {
             font-size: 100px;
         }
-        
+
         a {
             color: #000000;
             text-decoration: none;
@@ -47,7 +47,7 @@
 
         .main {
             width: 100%;
-            background: #ddd;
+            background: rgb(255,166,66);
         }
 
         .main h2 {
@@ -55,12 +55,10 @@
             line-height: 1rem;
             font-weight: normal;
             font-size: 0.25rem;
-            border-bottom: 1px solid #000;
         }
 
         .main ul li {
             padding: 0 0.4rem 0.25rem;
-            background: blue;
             overflow: hidden;
             line-height: 0.25rem;
         }
@@ -81,7 +79,7 @@
             border: 0.01rem solid #000;
             border-radius: 0.08rem;
             margin-left: 0.25rem;
-
+            cursor: pointer;
         }
 
         .step-content img {
@@ -111,7 +109,7 @@
                 <span class="step">第一步</span>
                 <div class="step-content">
                     <span class="txt">复制淘口令</span>
-                    <input data-clipboard-target="#foo" class="copy-btn" type="button" value="点击复制" />
+					<input data-clipboard-target="#foo" class="copy-btn" type="button" value="点击复制" />
                     <textarea id="foo"></textarea>
                 </div>
             </li>
@@ -126,6 +124,7 @@
     </div>
     <!-- 领取步骤 -->
 </body>
+
 <script>
     window.onload = function () {
         var btn = document.getElementsByClassName('copy-btn')[0]
@@ -153,6 +152,9 @@
         refresh();
         window.onresize = refresh;
     }
+
+
+
 </script>
 
 </html>
