@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'PingFangSc';
+    src: url('../font/PingFangSC-Regular2.eot'); 
+    src: url('../font/PingFangSC-Regular2.eot?#iefix') format('embedded-opentype'),                      
+	     url('../font/PingFangSC-Regular2.woff') format('woff'), 
+		 url('../font/PingFangSC-Regular2.ttf')  format('truetype'),             
+		 url('../font/PingFangSC-Regular2.svg#PingFangSC-Regular2') format('svg'); 
+}
+
+
+
+@keyframes UpDownAnimation{
+	0%{bottom: 50px;}
+	100%{bottom: 70px;}
+}
+
+.container{
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.fl{
+	float: left;
+}
+.ov{
+	overflow: hidden;
+}
+.dis{
+	display: none;
+}
+.ver{
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: -3px;
+}
+.positionCenter{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
