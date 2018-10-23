@@ -3,7 +3,7 @@ window.onload=function(){
 
 
 	var pic = $('.pic');
-	var defaultPic = 'img/site/default.png';
+	var defaultPic = 'img/cl1.jpg';
 
 
 	$.each(clsInfo,function(i,v){
