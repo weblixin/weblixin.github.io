@@ -111,13 +111,13 @@ function loading() {
                     //拼接图片
                     $('.shade').hide();
                     var tagHtml = "";
-                    for (var i = 1; i <= 41; i++) {
+                    for (var i = 1; i <= 59; i++) {
                         if (i == 1) {
-                            tagHtml += ' <div id="first" style="background:url(image/00' + (i < 10 ? '0' + i : i) + '.jpg) center top no-repeat;background-size:100%"></div>';
-                        } else if (i == 41) {
-                            tagHtml += ' <div id="end" style="background:url(image/00' + (i < 10 ? '0' + i : i) + '.jpg) center top no-repeat;background-size:100%"></div>';
+                            tagHtml += ' <div id="first" style="background:url(img/cl' + i + '.jpg) center top no-repeat;background-size:100%"></div>';
+                        } else if (i == 59) {
+                            tagHtml += ' <div id="end" style="background:url(img/cl' + i + '.jpg) center top no-repeat;background-size:100%"></div>';
                         } else {
-                            tagHtml += ' <div style="background:url(image/00' + (i < 10 ? '0' + i : i) + '.jpg) center top no-repeat;background-size:100%"></div>';
+                            tagHtml += ' <div style="background:url(img/cl' + i + '.jpg) center top no-repeat;background-size:100%"></div>';
                         }
                     }
                     $(".flipbook").append(tagHtml);
