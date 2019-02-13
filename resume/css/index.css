@@ -1,0 +1,157 @@
+/* 容器 */
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 全屏滚动容器 */
+.full_page {
+  width: 100%;
+  height: 500%;
+  /* overflow: hidden; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.full_page_item {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+
+.home {
+  background: url(../img/bg.png) #87b0a5;
+}
+
+.info {
+  background: url(../img/bg.png) #109085;
+}
+
+.skill {
+  background: url(../img/bg.png) #a29971;
+}
+
+.project {
+  background: url(../img/bg.png) #788990;
+}
+
+.contact {
+  background: url(../img/bg.png) #999;
+}
+
+/* 全屏滚动tab */
+.slider_tab {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  margin-top: -150px;
+}
+
+.slider_tab li {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider_tab li div {
+  width: 15px;
+  height: 15px;
+  background: #f0f0f0;
+  border-radius: 50%;
+}
+
+.slider_tab li div.active {
+  width: 50px;
+  height: 50px;
+  background: #666;
+  transition: all .3s;
+}
+
+.slider_tab li div img {
+  width: 60%;
+  height: 60%;
+  padding-top: 20%;
+  padding-left: 20%;
+  display: none;
+}
+
+.slider_tab li div img.select {
+  display: block;
+}
+
+/* 下一页 */
+.next_page {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  left: 50%;
+  margin-left: -15px;
+  cursor: pointer;
+  animation: jump .8s infinite;
+  -moz-animation: jump .8s infinite;
+  /* Firefox */
+  -webkit-animation: jump .8s infinite;
+  /* Safari and Chrome */
+  -o-animation: jump .8s infinite;
+  /* Opera */
+}
+
+.next_page img {
+  width: 100%;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 70px;
+  }
+
+  100% {
+    bottom: 55px;
+  }
+}
+
+@-moz-keyframes jump
+
+/* Firefox */
+  {
+  0% {
+    bottom: 70px;
+  }
+
+  100% {
+    bottom: 55px;
+  }
+}
+
+@-webkit-keyframes jump
+
+/* Safari 和 Chrome */
+  {
+  0% {
+    bottom: 70px;
+  }
+
+  100% {
+    bottom: 55px;
+  }
+}
+
+@-o-keyframes jump
+
+/* Opera */
+  {
+  0% {
+    bottom: 70px;
+  }
+
+  100% {
+    bottom: 55px;
+  }
+}
