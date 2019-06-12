@@ -163,6 +163,7 @@ ul {
 .chunk-content-main li img {
   vertical-align: middle;
   width: 14px;
+  margin-top: 5px;
 }
 
 .chunk-content-main li p {
