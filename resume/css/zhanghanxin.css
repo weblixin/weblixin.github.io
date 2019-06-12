@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: rgb(0, 193, 168);
+  overflow: hidden;
+}
+
+.person_info {
+  float: left;
+  width: 30%;
+  color: #fff;
+}
+
+.avatar {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.avatar img {
+  margin-top: 30px;
+  width: 40%;
+}
+
+.avatar p {
+  font-size: 25px;
+  font-family: "楷体";
+  padding-top: 20px;
+}
+
+.info {
+  padding: 50px 20px 0 30px;
+}
+
+.info .title {
+  color: #1afa29;
+  margin-left: 10px;
+}
+
+.info .title img {
+  vertical-align: middle;
+}
+
+.info-content {
+  padding: 10px 0 10px 30px;
+  font-size: 14px;
+}
+
+.info-content p {
+  padding-bottom: 5px;
+}
+
+.info-content p:last-child {
+  padding: 0;
+}
+
+.info-content p.no-title {
+  text-align: center;
+}
+
+.info-content p span {
+  display: inline-block;
+  width: 85px;
+  vertical-align: text-top;
+  text-align: right;
+}
+
+.info-content p span:last-child {
+  text-align: left;
+  width: 190px;
+}
+
+/*经验*/
+
+.person_experience {
+  margin: 1px;
+  margin-left: 30%;
+  background: rgb(240, 243, 242);
+  padding: 15px 10px;
+}
+
+.chunk-title {
+  width: 100%;
+  border-bottom: 2px solid #00C1A8;
+  padding: 5px 0;
+  font-size: 20px;
+  color: #00C1A8;
+  font-weight: bolder;
+}
+
+.chunk-title img {
+  vertical-align: middle;
+  width: 20px;
+  margin-top: -3px;
+}
+
+.chunk-content {
+  padding: 10px 0 10px 30px;
+}
+
+.chunk-content1 {
+  padding: 0 0 0 30px;
+}
+
+.edu {
+  padding: 5px 0;
+  color: rgb(134, 134, 134);
+  font-size: 14px;
+}
+
+.edu:first-child {
+  border-bottom: 1px solid #868686;
+}
+
+.edu span {
+  display: inline-block;
+  width: 160px;
+}
+
+.edu p {
+  display: inline-block;
+  width: 600px;
+  vertical-align: text-top;
+}
+
+.chunk-content-title {
+  color: rgb(0, 94, 82);
+  font-family: "宋体";
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.chunk-content-title span:first-child {
+  display: inline-block;
+  width: 150px;
+}
+
+.chunk-content-main {
+  padding: 10px 0 10px 30px;
+  font-size: 14px;
+}
+
+.chunk-content-main li {
+  line-height: 1.5;
+}
+
+.chunk-content-main li img {
+  vertical-align: middle;
+  width: 14px;
+}
+
+.chunk-content-main li p {
+  display: inline-block;
+  width: 720px;
+  vertical-align: text-top;
+  line-height: 2;
+}
+
+.result {
+  margin-top: 10px;
+  font-family: "楷体";
+  font-size: 16px;
+}
+
+.result span {
+  font-weight: bolder;
+}
+
+.pos {
+  margin-left: 60px;
+}
+
