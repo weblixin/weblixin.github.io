@@ -87,6 +87,7 @@ ul {
   margin-left: 30%;
   background: rgb(240, 243, 242);
   padding: 15px 10px;
+  min-height: 100vh;
 }
 
 .chunk-title {
