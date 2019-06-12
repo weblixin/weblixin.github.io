@@ -146,6 +146,11 @@ ul {
   width: 150px;
 }
 
+.chunk-content-title span:nth-child(2) {
+  display: inline-block;
+  min-width: 200px;
+}
+
 .chunk-content-main {
   padding: 10px 0 10px 30px;
   font-size: 14px;
